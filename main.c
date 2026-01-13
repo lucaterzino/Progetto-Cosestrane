@@ -8,7 +8,7 @@ int main() {
     int scelta = 0;
 
     do {
-        // Stampa del menu [cite: 13, 14]
+        // Stampa del menu principale
         printf("\n--- COSE STRANE: MENU PRINCIPALE ---\n");
         printf("1) Imposta gioco\n");
         printf("2) Gioca\n");
@@ -26,7 +26,7 @@ int main() {
             continue; // Ricomincia il ciclo
         }
 
-        // Switch per eseguire i comandi [cite: 15, 18]
+        // Switch per eseguire i comandi 
         switch (scelta) {
             case 1:
                 imposta_gioco();
@@ -36,18 +36,18 @@ int main() {
                 break;
             case 3:
                 termina_gioco();
-                // Il ciclo terminerà perché scelta è 3
+                // Il ciclo terminerà se verra selezionato 3
                 break;
             case 4:
                 crediti();
                 break;
             default:
-                // Gestione comando sbagliato [cite: 16]
+                // Gestione comando sbagliato 
                 printf("Comando sbagliato (deve essere 1-4). Riprova.\n");
                 break;
         }
 
-    } while (scelta != 3); // Condizione di uscita [cite: 23]
+    } while (scelta != 3); // Condizione di uscita 
 
     return 0;
 }
